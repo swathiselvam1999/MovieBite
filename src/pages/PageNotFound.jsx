@@ -5,7 +5,7 @@ const PageNotFound = () => {
   return (
     <main className="flex items-center justify-center ">
       <img src={PNF} alt="Page Not Found"  />
-      {console.log('Page Not Found image loaded successfully:', PNF)} {/* Log for debugging */}
+      {console.log('Page Not Found image loaded successfully:', PNF)} 
     </main>
   );
 }

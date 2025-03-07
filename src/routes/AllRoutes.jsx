@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { MovieDetails, MovieList, Search, PageNotFound } from "../pages";
 import DarkLight from "../components/DarkLight";
+import Successful from "../pages/Successful";
 
 export const AllRoutes = () => {
 
@@ -14,6 +15,8 @@ export const AllRoutes = () => {
             <Route path="movies/upcoming" element={<MovieList category="upcoming" apipath="movie/upcoming" />} />
             <Route path="search" element={<Search  apipath="search/movie" /> }/>
             <Route path="*" element={<PageNotFound />} />
+            <Route path="successful" element={<Successful />} />
+            
         </Routes>
     )
 

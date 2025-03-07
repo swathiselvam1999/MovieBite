@@ -12,8 +12,8 @@ const Card = ({ movie }) => {
     
     <>
     
-    <Link to={`/movie/${movie.id}`}>
-      <div className=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <Link to={`/MovieBite/movie/${movie.id}`}>
+      <div className=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-full hover:shadow-slate-700">
 
         <div>
           <img className="rounded-t-lg" src={image} alt={title} />
