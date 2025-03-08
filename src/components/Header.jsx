@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 relative">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           
           {/* Logo*/}
@@ -86,19 +86,19 @@ const Header = () => {
             </ul>
 
             {/* Dark Mode Toggle */}
-            <button onClick={() => setDarkMode(!darkMode)} className="m-5 hidden sm:block">
+            <button onClick={() => setDarkMode(!darkMode)} className="m-5 hidden md:block">
               {darkMode ? '☀️' : '🌙'}
             </button>
           </div>
 
           {/* Mobile Menu Toggle Button */}
-          <div className='flex items-center'>
+          <div className='flex items-center absolute top-[0rem] right-[0.5rem]'>
   
-            <button onClick={() => setDarkMode(!darkMode)} className="m-5 block sm:hidden">
+            <button onClick={() => setDarkMode(!darkMode)} className="m-5 block md:hidden">
               {darkMode ? '☀️' : '🌙'}
             </button>
             <button onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+              className="  inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
               <span className="sr-only">Open main menu</span>
               <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
