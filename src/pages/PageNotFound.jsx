@@ -1,5 +1,5 @@
 import React from 'react';
-import PNF from '../../public/page-not-found.jpg';
+import PNF from "../assets/page-not-found.jpg";
 
 const PageNotFound = () => {
   return (
